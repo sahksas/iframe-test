@@ -1,0 +1,12 @@
+<script>
+  window.onload = () => {
+    document.getElementById("parentName").innerHTML = window.parent.location.href;
+    document.getElementById("thisName").innerHTML = window.location.href;
+  };
+</script>
+
+<div>This page ↓</div>
+<div id="thisName"></div>
+
+<div>Caller ↓</div>
+<div id="parentName"></div>
